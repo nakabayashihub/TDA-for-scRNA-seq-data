@@ -1,7 +1,7 @@
 # TDA-for-scRNA-seq-data
 Single cell RNA-seq data analysis using Topological Data Analysis (TDA)
 Questions?Comments?Contact
-#Dataset
+#　Dataset
 GSE67310
 ~~~python
 #load libraries
@@ -17,6 +17,10 @@ y = x.drop('assignment', axis = 1)
 y = x.drop('log_tauGFP_intensity', axis = 1)
 y = x.drop('experiment', axis = 1)
 y = x.drop('time_point', axis = 1)
+# creating color table by day
+color_by_day = pd.DataFrame()
+for i in x.index:
+if i.find('') !=-1:
 #Computing Vietris-Rips complex
 rips = gd.RipsComplex(y.values, max_edge_lemgth = 200)
 #Computing simplex tree
