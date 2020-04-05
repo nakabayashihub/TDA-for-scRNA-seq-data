@@ -28,4 +28,6 @@ g = nx.Graph()
 for i in range(len(skeleton)):
   if len(skeleton[i][0]) == 2:
     g.add_edges(skeleton[i][0][0], skeleton[i][0][1])
+layout = nx.kamada_kawai_layout(g)
+nx.draw_networkx_node(g,layout,lineidths=0.2, edgecolors='black', node_size=20, node_color
 ~~~
