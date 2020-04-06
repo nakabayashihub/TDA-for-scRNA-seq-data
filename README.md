@@ -1,6 +1,6 @@
 # TDA-for-scRNA-seq-data
 Single cell RNA-seq data analysis using Topological Data Analysis (TDA)  
-
+Topology is one of a branch of mathematics that deals with the mathematical property of shapes'.  Topological Data Analysis (TDA) is recently focused as a promising method provides a insight into the structure underling a data cloud in high dimensional space by the technics from topology.  TDA has found many applications in many fields including biology, visual recognition, natural language processing, and so on.  Here scRNA-seq data is analyzed using TDA.
 ## Dataset
 [GSE67310](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67310)  
 Dataset of scRNA-seq for 405 induced neuronal (iN) cells from Mouse Embryonic Fibroblasts (MEFs)  
