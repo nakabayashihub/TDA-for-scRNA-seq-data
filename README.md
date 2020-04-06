@@ -36,7 +36,7 @@ type_color = pd.Series()
 for i in range(len(x)):
   if x.assignment[i] == 'MEF':
     type_color[y.index[i]] = 'red'
-  if x.assignment[i] == 'd2_induced':
+  elif x.assignment[i] == 'd2_induced':
     type_color[y.index[i]] = 'yellow'
   elif x.assignment[i] = 'd2_intermediate':
     type_color[y.index[i]] = 'orange'
@@ -44,17 +44,17 @@ for i in range(len(x)):
     type_color[y.index[i]] = 'skyblue'
   elif x.assignment[i] == 'd5_earlyMyocyte':
     type_color[y.index[i]] = 'lightgeen'
-   elif x.assignment[i] == 'd5_intermediate':
+  elif x.assignment[i] == 'd5_intermediate':
     type_color[y.index[i]] = 'brown'
-   elif x.assignment[i] == 'd5_failedReprog':
+  elif x.assignment[i] == 'd5_failedReprog':
     type_color[y.index[i]] = 'gray'
-   elif x.assignment[i] == 'd22_failedReprog':
+  elif x.assignment[i] == 'd22_failedReprog':
     type_color[y.index[i]] = 'black'
-   elif x.assignment[i] == 'Neuron':
+  elif x.assignment[i] == 'Neuron':
     type_color[y.index[i]] = 'blue'
-   elif x.assignment[i] == 'Myocyte':
+  elif x.assignment[i] == 'Myocyte':
     type_color[y.index[i]] = 'green'
-   else:
+  else:
     type_color[y.index[i]] = 'white'
 #Computing Vietris-Rips complex
 rips = gd.RipsComplex(y.values, max_edge_lemgth = 250)
