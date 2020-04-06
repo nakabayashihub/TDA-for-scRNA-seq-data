@@ -1,8 +1,7 @@
 # TDA-for-scRNA-seq-data
 Single cell RNA-seq data analysis using Topological Data Analysis (TDA)
-Questions?Comments?Contact
 #　Dataset
-GSE67310
+[GSE67310](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67310)
 ~~~python
 #load libraries
 import numpy as np
