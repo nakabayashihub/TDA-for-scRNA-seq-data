@@ -66,7 +66,7 @@ skeleton = simplex_tree.get_skeleton(2)
 g = nx.Graph()
 for i in range(len(skeleton)):
   if len(skeleton[i][0]) == 2:
-    g.add_edges(skeleton[i][0][0], skeleton[i][0][1])
+    g.add_edges(y.index[skeleton[i][0][0]], y.index[skeleton[i][0][1]])
 layout = nx.kamada_kawai_layout(g)
 nx.draw_networkx_node(g,layout,lineidths=0.2, edgecolors='black', node_size=20, node_color = day_color[list(g.nodes()].values)
 nx.draw_networkx_edges(g, layout, width = 0.2, edge_color = 'gray')
