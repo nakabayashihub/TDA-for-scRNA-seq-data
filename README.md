@@ -24,10 +24,10 @@ for i in range(len(x)):
   if x.time_point[i] == 0:
     day_color[y.index[i]] = 'red'
   elif x.time_point[i] == 2:
-    day_coloe[y.index[i]] = 'yellow'
+    day_color[y.index[i]] = 'yellow'
   elif x.time_point[i] == 5:
     day_color[y.index[i]] = 'green'
-  elif x.time_point[i]] == 20:
+  elif x.time_point[i] == 20:
     day_color[y.index[i]] = 'purple'
   else:
      day_color[y.index[i]] = 'blue'
@@ -57,7 +57,7 @@ for i in range(len(x)):
   else:
     type_color[y.index[i]] = 'white'
 #Computing Vietris-Rips complex
-rips = gd.RipsComplex(y.values, max_edge_lemgth = 250)
+rips = gd.RipsComplex(y.values, max_edge_length = 250)
 #Computing simplex tree
 simplex_tree = rips.create_simplex_tree(max_dimension = 2)
 #Computing skeleton
@@ -66,8 +66,8 @@ skeleton = simplex_tree.get_skeleton(2)
 g = nx.Graph()
 for i in range(len(skeleton)):
   if len(skeleton[i][0]) == 2:
-    g.add_edges(y.index[skeleton[i][0][0]], y.index[skeleton[i][0][1]])
+    g.add_edge(y.index[skeleton[i][0][0]], y.index[skeleton[i][0][1]])
 layout = nx.kamada_kawai_layout(g)
-nx.draw_networkx_node(g,layout,lineidths=0.2, edgecolors='black', node_size=20, node_color = day_color[list(g.nodes()].values)
+nx.draw_networkx_nodes(g,layout,lineidths=0.2, edgecolors='black', node_size=20, node_color = day_color[list(g.nodes()].values)
 nx.draw_networkx_edges(g, layout, width = 0.2, edge_color = 'gray')
 ~~~
