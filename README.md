@@ -7,6 +7,17 @@ Dataset of scRNA-seq for 405 induced neuronal (iN) cells from Mouse Embryonic Fi
 |cell type|day|#cells|
 |:---------------:|:------:|:----:|
 |MEF|day 0|10|
+|d2_induced|day 2||
+|d2_intermediate|day 2||
+|d5_earlyN|day 5||
+|d5_earlyMyocyte|day 5||
+|d5_intermediate|day 5||
+|d5_failedReprog|day 5||
+|d20_failedReprog|day 20||
+|d22_failedReprog|day 22||
+|Neuron|day 22||
+|Myocyte|day 22||
+|Fibroblast|day 22||
 
 ## python code
 ~~~python
