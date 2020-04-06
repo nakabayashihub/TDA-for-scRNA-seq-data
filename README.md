@@ -7,10 +7,10 @@ Dataset of scRNA-seq for 405 induced neuronal (iN) cells from Mouse Embryonic Fi
 |time point|#cells|
 |:------:|:----:|
 |day 0|73|
-|day 2|81|
+|day 2|81+47|
 |day 5|55|
 |day 20|33|
-|day 22|73|
+|day 22|73+43|
 
 ## python code
 ~~~python
