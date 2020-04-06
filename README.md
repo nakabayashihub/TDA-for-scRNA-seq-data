@@ -71,3 +71,5 @@ layout = nx.kamada_kawai_layout(g)
 nx.draw_networkx_nodes(g,layout,lineidths = 0.2, edgecolors = 'black', node_size=20, node_color = day_color[list(g.nodes())].values)
 nx.draw_networkx_edges(g, layout, width = 0.2, edge_color = 'gray')
 ~~~
+![network_day](https://github.com/nakabayashihub/TDA-for-scRNA-seq-data/blob/master/iNeuron_Network_day_small.tiff)
+![network_type](https://github.com/nakabayashihub/TDA-for-scRNA-seq-data/blob/master/iNeuron_Network_type_small.tiff)
