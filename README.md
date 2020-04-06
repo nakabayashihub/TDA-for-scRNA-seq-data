@@ -3,7 +3,10 @@ Single cell RNA-seq data analysis using Topological Data Analysis (TDA)
 
 ## Dataset
 [GSE67310](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67310)  
-Dataset of scRNA-seq for 405 induced neuronal (iN) cells from Mouse Embryonic Fibroblasts (MEFs) 
+Dataset of scRNA-seq for 405 induced neuronal (iN) cells from Mouse Embryonic Fibroblasts (MEFs)  
+|cell type|day|#cells|
+|:---------------:|:------:|:----:|
+|MEF|day 0|10|
 
 ## python code
 ~~~python
