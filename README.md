@@ -2,26 +2,26 @@
 Single cell RNA-seq data analysis using Topological Data Analysis (TDA)  
 
 ## Dataset
-[GSE67310](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67310) 
+[GSE67310](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67310)  
 dataset of scRNA-seq for induced neuronal (iN) cells from Mouse Embryonic Fibroblasts (MEFs) 
 
 ## python code
 ~~~python
-#load libraries
+#Load libraries
 import numpy as np
 import pandas as pd
 import gudhi as gd
 import networkx as nx
-#reading data
+#Reading data
 x = pd.read_csv('GSE67310_iN_data_log2FPKM_annotated.txt', delimiter = '\t')
-#triming data
+#Triming data
 y = x.drop('cell_name', axis = 1)
 y = y.drop('assignment', axis = 1)
 y = y.drop('log_tauGFP_intensity', axis = 1)
 y = y.drop('experiment', axis = 1)
 y = y.drop('time_point', axis = 1)
 y.index = x.cell_name
-# creating color table by day
+#Creating color table by day
 day_color = pd.DataFrame()
 for i in range(len(x)):
   if x.time_point[i] == 0:
@@ -34,7 +34,7 @@ for i in range(len(x)):
     day_color[y.index[i]] = 'purple'
   else:
      day_color[y.index[i]] = 'blue'
-# creating color table by cell type
+#Creating color table by cell type
 type_color = pd.Series()
 for i in range(len(x)):
   if x.assignment[i] == 'MEF':
@@ -65,7 +65,7 @@ rips = gd.RipsComplex(y.values, max_edge_length = 250)
 simplex_tree = rips.create_simplex_tree(max_dimension = 2)
 #Computing skeleton
 skeleton = simplex_tree.get_skeleton(2)
-#Constructing netowrk
+#Constructing network
 g = nx.Graph()
 for i in range(len(skeleton)):
   if len(skeleton[i][0]) == 2:
