@@ -34,7 +34,7 @@ for i in range(len(x)):
     type_color[y.index[i]] = 'yellow'
   elif x.assignment[i] == 'd2_intermediate':
     type_color[y.index[i]] = 'orange'
-  elif x.assignment[i] == 'd5_earlyN':
+  elif x.assignment[i] == 'd5_earlyiN':
     type_color[y.index[i]] = 'skyblue'
   elif x.assignment[i] == 'd5_earlyMyocyte':
     type_color[y.index[i]] = 'lightgeen'
