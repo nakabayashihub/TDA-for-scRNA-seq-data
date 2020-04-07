@@ -85,4 +85,4 @@ nx.draw_networkx_nodes(g, layout, linewidths = 0.2, edgecolors = 'black', node_s
 nx.draw_networkx_edges)g, layout, width = 0.2, edge_color = 'gray')
 ~~~
 ![network_day](iNeuron_Network_day_samll.tiff)
-![network_type](https://github.com/nakabayashihub/TDA-for-scRNA-seq-data/blob/master/iNeuron_Network_type_small.tiff)
+![network_type](iNeuron_Network_type_small.tiff)
