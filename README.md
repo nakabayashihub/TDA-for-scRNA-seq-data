@@ -4,7 +4,7 @@ Topology is one of a branch of mathematics that deals with the mathematical prop
 ## Dataset
 [GSE67310](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67310)  
 Dataset of scRNA-seq for 405 induced neuronal (iN) cells from Mouse Embryonic Fibroblasts (MEFs) at five time points.  
-MEFs are reprogramed by over expression of Ascl1 gene.  Continuous reprograming path is reconstruct through transriptome similarity.
+MEFs are reprogramed by over expression of Ascl1 gene.  Continuous reprograming path is reconstructed through transriptome similarity.
 |time point|#cells|
 |:------:|:----:|
 |day 0|73|
