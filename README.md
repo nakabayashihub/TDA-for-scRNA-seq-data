@@ -13,7 +13,8 @@ MEFs are reprogramed by over expression of Ascl1 gene.  Continuous reprograming 
 |day 20|33|
 |day 22|116|
 
-## python code
+## python code  
+First, Vietris-Rips filtration is performed to compute persistent homology.  A network composed of 1-simplex that is to say linkage between data pointts.
 ~~~python
 #Load libraries
 import numpy as np
