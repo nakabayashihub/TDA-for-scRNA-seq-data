@@ -74,6 +74,12 @@ rips = gd.RipsComplex(y.values, max_edge_length = 250)
 simplex_tree = rips.create_simplex_tree(max_dimension = 2)
 #Computing skeleton
 skeleton = simplex_tree.get_skeleton(2)
+#Getting persistence diagram
+diag = simplex_tree.persistence()
+#Plotting persistence diagram
+gd.plot_persistence_diagram(diag)
+#Plotting persistence density
+gd.plot_persistence_density(diag)
 #Constructing network
 g = nx.Graph()
 for i in range(len(skeleton)):
