@@ -93,5 +93,5 @@ nx.draw_networkx_edges)g, layout, width = 0.2, edge_color = 'gray')
 ~~~
 ![persistence_diagram](iNeuron_Persistence_diagram.tiff)
 ![persistence_density](iNeuron_Persistence_density.tiff)
-![network_day](iNeuron_Network_day_samll.tiff)
-![network_type](iNeuron_Network_type_small.tiff)
+![network_time_point](iNeuron_Network_time_point_samll.tiff)
+![network_cell_type](iNeuron_Network_cell_type_small.tiff)
