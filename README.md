@@ -91,5 +91,7 @@ nx.draw_networkx_edges(g, layout, width = 0.2, edge_color = 'gray')
 nx.draw_networkx_nodes(g, layout, linewidths = 0.2, edgecolors = 'black', node_size = 20, node_color = type_color[list(g.nodes()].values)
 nx.draw_networkx_edges)g, layout, width = 0.2, edge_color = 'gray')
 ~~~
+![persistence_diagram](iNeuron_Persistence_diagram.tiff)
+![persistence_density](iNeuron_Persistence_density.tiff)
 ![network_day](iNeuron_Network_day_samll.tiff)
 ![network_type](iNeuron_Network_type_small.tiff)
