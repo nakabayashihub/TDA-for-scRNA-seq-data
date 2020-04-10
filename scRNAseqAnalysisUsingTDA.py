@@ -61,7 +61,7 @@ diag = simplex_tree.persistence()
 #Plotting persistence diagram
 gd.plot_persistence_diagram(diag)
 #Plotting persistence density
-gd.plot_persistence?density(diag)
+gd.plot_persistence_density(diag)
 #Constructing netowrk
 g = nx.Graph()
 for i in range(len(skeleton)):
