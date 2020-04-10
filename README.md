@@ -95,5 +95,6 @@ nx.draw_networkx_edges)g, layout, width = 0.2, edge_color = 'gray')
 ![persistence_density](iNeuron_Persistence_density.tiff)
 ![network_time_point](iNeuron_Network_time_point_samll.tiff)
 ![network_cell_type](iNeuron_Network_cell_type_small.tiff)
-#Reference
+
+# Reference
 [Treutlein B, Lee QY, Camp JG, Mall M et al. Dissecting direct reprogramming from fibroblast to neuron using single-cell RNA-seq. Nature 2016 Jun 16;534(7607):391-5.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4928860)
