@@ -97,5 +97,5 @@ nx.draw_networkx_edges)g, layout, width = 0.2, edge_color = 'gray')
 ![network_cell_type](iNeuron_Network_cell_type_small.tiff)
 
 # Reference
-[Treutlein B, Lee QY, Camp JG, Mall M et al. Dissecting direct reprogramming from fibroblast to neuron using single-cell RNA-seq. Nature 2016 Jun 16;534(7607):391-5.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4928860)  
-[GUDHI Python modules documentation](https://gudhi.inria.fr/python/latest)
+- [Treutlein B, Lee QY, Camp JG, Mall M et al. Dissecting direct reprogramming from fibroblast to neuron using single-cell RNA-seq. Nature 2016 Jun 16;534(7607):391-5.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4928860)  
+- [GUDHI Python modules documentation](https://gudhi.inria.fr/python/latest)
